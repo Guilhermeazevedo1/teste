@@ -1,0 +1,100 @@
+.navBar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    
+    position: absolute;
+    width: 3.03rem;
+    height: 3.10rem;
+    left: 10rem;
+    top: 1.5rem;
+    background: #F47B0A;
+    border-radius: 13px;
+    z-index: 2;
+}
+
+.icone{
+    position: absolute;
+    width: 1.56rem;
+    height: 1.41rem;
+    left: 0.85rem;
+    top: 0.85rem;
+    z-index: 2;
+    
+}
+
+h3{
+/* diskvinho. */
+
+  position: absolute;
+  width: 10.13rem;
+  height: 1.69rem;
+  left: 3.3rem;
+  top: -1.2rem;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 31px;
+  line-height: 86.84%;
+
+  letter-spacing: -0.03em;
+  color: #F47B0A;
+  z-index: 2;
+}
+
+.login{
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 40px;
+
+  position: absolute;
+  width: 7.24rem;
+  height: 2.3rem;
+  left: 80%;
+  top: 1.75rem;
+
+  background: #F47B0A;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+
+
+  .navBar div {
+    display: flex;
+    position: absolute;
+    align-items: center; /* Alinha os itens à esquerda */
+    
+    margin-left: -34%;
+    margin-top: 3%;
+  }
+
+  
+    .logo  {
+      margin-bottom: 10px; /* Adiciona espaço entre o logo e o botão */
+      
+    }
+  
+    h3 {
+      
+      font-size: 31px; /* Reduz o tamanho do texto */
+    }
+  
+    .login {
+      font-size: 12px; /* Reduz o tamanho do botão */
+      left: 24.5rem;
+      top: 1.75rem; /* Move um pouco para baixo para criar espaço */
+    }
+  }

@@ -1,0 +1,38 @@
+/* CategoriaVinho.module.css */
+.categoriaConteiner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: auto;
+  }
+  
+.categoriaConteiner > div > h3 {
+    color: #000; 
+    text-align: left;
+    margin-left: -25px;
+}
+  
+.categoriaConteiner > div {
+    position: relative;
+    display: flex; 
+    padding-left: 80px;
+    padding-right: 2px;
+    padding-top: 80px;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+    border-radius: 10px;
+    box-shadow: #ccc;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -230px;
+    
+}
+
+@media (max-width: 600px) {
+  .categoriaConteiner {
+    display: grid;
+    width: auto;
+    gap: 250px; /* Adiciona um espaçamento entre as divs */
+  }
+
+  
+}

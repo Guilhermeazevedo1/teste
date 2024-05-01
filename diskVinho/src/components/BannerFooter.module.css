@@ -1,0 +1,42 @@
+.bannerFooterContainer {
+    position: relative;  
+    transform: rotate(180deg); /* Gira a imagem em 45 graus */
+    margin-top: -30%; 
+    width: auto;
+  }
+  
+.bannerFooter  {
+    position: relative;
+    width: 100%;
+    height: 48rem;
+    z-index: 1;  
+    
+}
+  
+.bannerFooter2  {
+    position: relative;
+    width: 100%;
+    height: 19.5rem; 
+    top: -18.5rem;
+    background-size: cover; 
+    z-index: 0;  
+    
+}
+  
+@media (max-width: 600px) {
+    .bannerFooterContainer {
+      
+      width: auto;
+    }
+
+    .bannerFooter {
+      position: relative;
+      height: 58rem; /* Ajusta a altura da primeira imagem para dispositivos móveis */
+      margin-bottom: -45%;
+    }
+  
+    .bannerFooter2 {
+      height: 9.75rem; /* Ajusta a altura da segunda imagem para dispositivos móveis */
+      top: -22.75rem; /* Ajusta a posição vertical da segunda imagem */
+    }
+}

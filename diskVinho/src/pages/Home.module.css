@@ -1,0 +1,81 @@
+.conteudoBanner{
+    position: absolute;
+    top: 220px;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img{
+    
+    width: 100%; /* A imagem ocupará 50% da largura do contêiner pai */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+   
+      
+}
+
+h1, p{
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 9.5rem;
+    font-weight: bold;
+    
+}
+
+
+input{
+    background-color: #FFFFFF;
+    height: 36px;
+    width: 270px;
+    border-radius: 8px 0px 0px 8px;
+    border: 0px;
+    margin-left: 80px;
+    padding-left: 30px;
+    padding-top: 2.5px;
+    color: #000;
+    
+}
+
+
+.conteudoBanner button{
+
+    position: relative;
+    background: #F47B0A;
+    border-radius: 0px 8px 8px 0px;  
+}
+
+@media (max-width: 600px) {
+    .conteudoBanner {
+      flex-direction: column; /* Empilha os itens verticalmente */
+      width: 100%;
+    }
+  
+    .img {
+      width: 100%; /* Define a largura da imagem como 100% para ocupar toda a largura da tela */
+      margin-top: 20px; /* Adiciona um espaço entre a imagem e o texto acima */
+      margin-left: 0;
+      
+    }
+
+    .texto{
+      align-items: flex-start; 
+      margin-left: -29%;
+      
+    }
+    
+    input{
+      width: 230px;
+      margin-left: 23%;
+    }
+
+    h1 {
+      font-size: 20px; /* Reduz o tamanho do título */
+    }  
+  
+    p {
+      font-size: 16px; /* Reduz o tamanho do texto */
+      
+    }
+  }

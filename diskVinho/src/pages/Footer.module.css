@@ -1,0 +1,114 @@
+.footerContainer{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: -13%;
+    gap: 5%;
+}
+
+.redesSociais{
+    position: relative;
+    margin-top: -40%;
+    z-index: 2;
+    gap: 30px;
+}
+
+.redes{
+    margin-top: 20%;
+}
+
+.redes > img{
+    margin-right: 9.7%;
+}
+
+.titulo1,
+.titulo2 {
+  margin-bottom: 20%;
+}
+
+.localizacao{
+    position: relative;
+    margin-top: -30%;
+    z-index: 2;
+    color: #DBDBDB;
+    text-align: center;
+}
+
+.informacoes{
+    position: relative;
+    margin-top: -30%;
+    z-index: 2;
+    color: #DBDBDB;
+}
+
+.loja{
+    display: flex; /* Use flexbox para alinhar os itens verticalmente */
+    flex-direction: column; /* Empilhe os itens verticalmente */
+    align-items: center;   
+    position: relative;
+    margin-top: -30%;
+    z-index: 2;
+}
+
+  
+.loja img {
+    margin: 15px; /* Adicione margem entre as imagens */
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .footerContainer {
+      width: auto;
+      flex-direction: column; /* Empilha os itens verticalmente */
+      align-items:first baseline; /* Centraliza os itens horizontalmente */
+      margin-top: -190%; /* Remove o espaçamento superior */
+      margin-left: 5%;
+    }
+  
+    .redesSociais {
+      margin-top: 0; /* Remove o espaçamento superior */
+    }
+    
+    .diskVinhoFooter {
+      display: none; 
+  }
+
+    .redes {
+      display: flex; /* Exibe os ícones horizontalmente */
+      justify-content: center; /* Centraliza os ícones horizontalmente */
+      margin-top: 10px; /* Adiciona um pouco de espaço acima dos ícones */
+    }
+  
+    .redes > img {
+      margin-right: 10px; /* Aumenta o espaçamento entre os ícones */
+    }
+  
+    .titulo1,
+    .titulo2 {
+      
+      margin-bottom: 10%; /* Reduz o espaçamento abaixo dos títulos */
+      font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+  
+    .localizacao,
+    .informacoes { 
+
+      margin-top: 10px; /* Adiciona um pouco de espaço acima dos itens */
+      text-align: center; /* Centraliza o texto */
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      padding: 0;
+     
+    }
+
+  
+    
+  
+    .loja {
+      margin-top: 20px; /* Adiciona espaço acima da seção de loja */
+    }
+  
+    .loja img {
+      width: 100px; /* Redimensiona as imagens das lojas */
+      margin: 5px; /* Ajusta a margem das imagens */
+    }
+  }

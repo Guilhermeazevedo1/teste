@@ -1,0 +1,69 @@
+.opcoes{
+    position: relative;
+
+    background-color: #6A1B34;
+    width: 100%;
+}
+
+.opcoesContainer {
+    
+    display: flex;
+    padding: 100px;
+    justify-content: center;   
+    margin-top: 150px;
+    justify-content: space-around;
+}
+  
+.opcoesContainer > div {
+    display: flex; /* Torna o conteúdo das divs flexível */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+
+.opcoesContainer img{
+    align-items: center; 
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    text-align: center; 
+}
+  
+.opcoesContainer p{
+    text-align: center;
+    margin-left: 0;
+}
+
+.titulo, .titulo1{
+    color: #F47B0A;
+    font-size: 27px;
+}
+
+@media (max-width: 600px) {
+    .opcoesContainer {
+      width: auto;
+      flex-direction: column; /* Altera a direção do layout para vertical */
+      padding: 20%; /* Reduz o padding para ocupar menos espaço */
+      margin-top: 50px; /* Reduz o espaçamento superior */
+    }
+  
+    .opcoesContainer > div {
+      margin-bottom: 20px; /* Adiciona um espaçamento entre os itens na direção vertical */
+    }
+  
+    .opcoesContainer img {
+      width: auto; /* Reduz o tamanho das imagens para caber na tela */
+      max-width: 200px; /* Define um tamanho máximo para as imagens */
+      padding: 20px; /* Reduz o padding das imagens */
+      margin-bottom: 6%;
+    }
+  
+    .opcoesContainer p {
+      font-size: 20px; /* Reduz o tamanho da fonte dos parágrafos */
+      margin-top: -3%;
+    }
+  
+ 
+}

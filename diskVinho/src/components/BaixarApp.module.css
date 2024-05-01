@@ -1,0 +1,162 @@
+.container{
+  width: 100%;
+}
+
+.container > div{
+    width: 85%;
+    margin-left: 2%;
+}
+
+.mapaContainer{
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BaixarApp.module.css */
+.imgMapa > img {
+    position: relative; /* Mudança para relative para que o retângulo possa ser posicionado em relação a esta div */
+    width: 100%; /* Ajuste de tamanho */
+    
+    border-radius: 28px;
+    top: 50%; /* Posiciona o retângulo no meio verticalmente */
+    left: 31%; /* Posiciona o retângulo no meio horizontalmente */
+    transform: translate(-25%, -3%); /* Centraliza o retângulo */
+}
+
+.retanguloTransparente {
+    position: absolute;
+    top: 50%; /* Posiciona o retângulo no meio verticalmente */
+    left: 56%; /* Posiciona o retângulo no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o retângulo */
+}
+  
+
+.paragrafoCentralizado {
+    position: absolute;
+    top: 25%; /* Posiciona o parágrafo no meio verticalmente */
+    left: 15%; /* Posiciona o parágrafo no meio horizontalmente */
+    transform: translate(-53%, 10%); /* Centraliza o parágrafo */
+    text-align: center;
+    color: #000;
+}
+
+
+.baixarApp{
+    width: 100%;
+    display: flex;
+    margin-top: 10%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fraseLoja{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+    
+}
+.fraseLoja > h1{
+    color: #F47B0A;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fraseLoja > p{
+    color: #242424;
+    width: 100%;
+    margin-left: 18.5%;
+}
+
+
+.loja{
+    display: flex;
+    gap: 12%;
+    margin-left: 22%;
+}
+
+
+.tamanhoImg > img{
+    width: 80%;
+    margin-top: 25%;
+}
+
+@media (max-width: 600px) {
+    .container > div {
+      width: 100%; /* Define a largura de todos os divs para ocupar 100% da largura */
+      margin-left: 0; /* Remove a margem esquerda para ocupar toda a largura */
+      margin-bottom: 0;
+      width: auto;
+    }
+  
+    .mapaContainer {
+      margin-top: 50px; /* Reduz o espaçamento superior */
+    }
+  
+    .imgMapa img {
+      width: 95%; /* Ajusta a largura da imagem para ocupar toda a largura */
+      border-radius: 0; /* Remove o arredondamento das bordas */
+      top: auto; /* Remove o posicionamento absoluto */
+      left: 2.5%; /* Remove o posicionamento absoluto */
+      transform:none ; /* Remove a transformação */
+      margin-bottom: 0%;
+    }
+  
+    .retanguloTransparente,
+    .paragrafoCentralizado {
+      position: absolute; /* Remove o posicionamento absoluto */
+      transform: none; /* Remove a transformação */
+      top: 0%; /* Remove o posicionamento absoluto */
+      left: auto; /* Remove o posicionamento absoluto */
+      text-align: center; /* Centraliza o texto */ 
+    }
+
+    .retanguloTransparente img{
+      width: 55%;
+      margin-top: 5%;
+    }
+
+    .paragrafoCentralizado{
+      margin-top: 10.5%;
+      margin-left: 27.5%;
+    }
+  
+    .baixarApp {
+      display: flex;
+      flex-direction: column; /* Altera a direção do flex para empilhar os elementos verticalmente */
+      align-items: center; /* Centraliza os elementos horizontalmente */
+    }
+
+  .fraseLoja {
+      text-align: center; /* Centraliza o texto */
+      font-size: 12px;
+      margin-top: -10%;
+    }
+
+  .fraseLoja p {
+    text-align: center; /* Centraliza o texto */
+    margin-left: 0.3%;
+  }
+
+  .phone {
+      order: 3; /* Define a ordem do elemento phone para 3 para que fique por último */
+      margin-top: -8%; /* Adiciona um espaçamento entre o elemento phone e os outros elementos */
+    }
+
+  .tamanhoImg{
+    margin-top: -7%;
+  }  
+
+  .tamanhoImg img {
+      width: 90%;
+      margin-left: -60%;
+      
+  }
+
+}
